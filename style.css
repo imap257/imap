@@ -636,8 +636,44 @@ footer a:hover { text-decoration: underline; }
 
 /* ── RESPONSIVE ───────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  .nav-inner { flex-direction: column; height: auto; padding: .8rem 1rem; gap: .5rem; }
-  .vision-block, .research-theme, .contact-grid { grid-template-columns: 1fr; }
-  .research-theme.reverse { direction: ltr; }
-  .hero { padding: 4rem 1.5rem 3.5rem; }
+  .nav-inner {
+    flex-direction: column;
+    height: auto;
+    padding: .8rem 1rem;
+    gap: .5rem;
+  }
+
+  .vision-block,
+  .research-theme,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-theme.reverse {
+    direction: ltr;
+  }
+
+  .hero {
+    padding: 4rem 1.5rem 3.5rem;
+  }
+
+  /* ADD THIS */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .contact-map img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .person-photo img,
+  .member-mini-photo img,
+  .vision-photo img,
+  .research-theme-photo img {
+    width: 100%;
+    height: auto;
+  }
 }

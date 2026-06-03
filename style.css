@@ -636,6 +636,7 @@ footer a:hover { text-decoration: underline; }
 
 /* ── RESPONSIVE ───────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
+
   .nav-inner {
     flex-direction: column;
     height: auto;
@@ -653,26 +654,43 @@ footer a:hover { text-decoration: underline; }
     direction: ltr;
   }
 
+  /* HERO / BANNER */
   .hero {
-    padding: 4rem 1.5rem 3.5rem;
+    padding: 3.5rem 1rem 3rem;
   }
 
-  /* ADD THIS */
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero .subtitle {
+    font-size: 1rem;
+    padding: 0 .5rem;
+  }
+
+  .hero-affiliations {
+    flex-direction: column;
+    align-items: center;
+    gap: .6rem;
+  }
+
+  .hero-affiliations span {
+    width: fit-content;
+  }
+
+  /* IMAGES */
   img {
     max-width: 100%;
     height: auto;
+    display: block;
   }
 
-  .contact-map img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .person-photo img,
-  .member-mini-photo img,
+  .contact-map img,
   .vision-photo img,
-  .research-theme-photo img {
+  .research-theme-photo img,
+  .person-photo img,
+  .member-mini-photo img {
     width: 100%;
     height: auto;
   }
